@@ -1,0 +1,482 @@
+<!-- 配置项详情见 https://bndong.github.io/Cnblogs-Theme-SimpleMemory/v2/#/Docs/Customization/config -->
+
+<script type="text/javascript">
+window.cnblogsConfig = {
+    info: {
+        name: ' Skyかざまこうと', //「待填内容」 用户名
+        startDate: '2026/06/01', //「待填内容」 入园时间，年-月-日。入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
+        avatar: 'https://pic.cnblogs.com/avatar/3805543/20260601232457.png', //「待填内容」 用户头像链接
+        blogIcon: 'http://pic.cnblogs.com/avatar/3805543/20260601232457.png', //「待填内容」 博客图标链接
+    },
+    sidebar: { // 列表数据 ['导航名称', '链接', 'icon']
+        customList: { //「待填内容」
+            "友链": { // 标题
+                "data": [ // 列表数据 ['列表', '链接']
+                    // ['好友的名字', '好友的链接'],
+                    // ['好友的名字', '好友的链接'],//按照这种格式添加即可。
+                ],
+                "icon": "icon-pengyoufill" // 配置图标，参考文档：定制化/字体图标库
+            },
+        },
+        navList: [ //「待填内容」 把“对应链接”替换成对应的链接即可，注意不要删掉单引号
+            ['首页', 'https://home.cnblogs.com/u/Sky-White', 'icon-blog-solid'],
+            ['友链', 'https://www.cnblogs.com/Sky-White/p/20296574', 'icon-pengyoufill'],
+            ['联系', 'https://msg.cnblogs.com/send/Skyかざまこうと', 'icon-zhifeiji'],
+            ['管理', 'https://i.cnblogs.com/', 'icon-setup_fill'],
+            ['GitHub', 'https://github.com/Sky__White', 'icon-github'],
+        ],
+        infoBackground: 'https://cdn.luogu.com.cn/upload/image_hosting/n8e51gb5.png',//侧边栏背景图片
+        titleMsg: 'こんにちは',//侧边栏title信息，可以填欢迎语之类的
+    },
+    //background - 主页banner图片
+    //主页banner图片Url，推荐尺寸>= 1920*1080，支持多张，每次刷新随机设置一张。
+    banner: { //「待填内容」
+        home: {
+            background: [
+                "https://cdn.luogu.com.cn/upload/image_hosting/n8e51gb5.png",//在双引号中填入图片链接，下同。
+                "https://cdn.luogu.com.cn/upload/image_hosting/qr9sf68j.png",//可以按照这种格式往后加任意数量的图片链接。
+            ],
+            title: [ 
+//首页上随机展示的一句话，建议不要太长。如果这句话较长，可以用<br>作为换行符，但整句话包括换行符都要包含在同一个单引号里。
+                '喜びはいつも苦しみの上に成り立っている。',//在单引号中填入一句或多句话，下同。
+                'Joy is always built upon suffering.',//可以按照这种格式往后添加任意数量的话。
+                '喜悦永远建立在痛苦之上。'
+            ],
+            titleSource: 'jinrishici',
+            /* 所有可配置项
+            jinrishici：每次刷新随机获取一句古诗词。
+            one：每日获取一句话
+            */
+
+        },
+        //文章页banner图片Url，推荐尺寸>= 1920*1080，支持多张，每次刷新随机设置一张。
+        article: { //「待填内容」
+            background: [
+                "https://img.paulzzh.com/touhou/random",
+              //可以直接添加图片链接，也可以像我这样添加php链接，使用api接口批量生成随机图片。
+                "https://cdn.luogu.com.cn/upload/image_hosting/n8e51gb5.png",
+                "https://cdn.luogu.com.cn/upload/image_hosting/qr9sf68j.png",
+            ],
+        },
+    },
+    links: {
+      //「待填内容」
+        page: [{
+          //以我自己为例，后面按照这种格式填即可。可以添加任意数量的友链。
+            name: 'Skyかざまこうと', // 昵称
+            introduction: '相信闪避的我,本身就是个闪避', // 简介
+            avatar: 'https://pic.cnblogs.com/avatar/3805543/20260601232457.png', // 头像
+            url: 'https://www.cnblogs.com/Sky-White/p/20296574' // 友链地址
+        }, ],
+    },
+    //页面加载loading 「待填内容」
+  //这部分是刷新页面时的动效，可以在下面任选一种，但注意要把其他的注释掉，否则可能不会生效。
+    loading: {
+        
+        rebound: {
+            tension: 16,
+            friction: 5
+        },
+        spinner: {
+            id: 'spinner',
+            radius: 90,
+            sides: 3,
+            depth: 4,
+            colors: {
+                //background: '#231E76',
+                //stroke: '#231E76',
+                background: '#f0f0f0',
+                stroke: '#272633',
+                base: null,
+                child: '#272633'
+            },
+            alwaysForward: true, // When false the spring will reverse normally.
+            restAt: 0.5, // A number from 0.1 to 0.9 || null for full rotation
+            renderBase: false
+        }
+        
+        /*
+        rebound: {
+            tension: 14,
+            friction: 10
+        },
+        spinner: {
+            id: 'spinner',
+            radius: 90,
+            sides: 5,
+            depth: 8,
+            colors: {
+                background: '#00272C',
+                stroke: null,
+                base: null,
+                child: '#02C39A'
+            },
+            alwaysForward: true, // When false the spring will reverse normally.
+            restAt: null, // A number from 0.1 to 0.9 || null for full rotation
+            renderBase: false
+        }
+        */
+        /*
+        rebound: {
+            tension: 10,
+            friction: 7
+        },
+        spinner: {
+            id: 'spinner',
+            radius: 160,
+            sides: 8,
+            depth: 6,
+            colors: {
+                background: '#181818',
+                stroke: '#D23232',
+                base: null,
+                child: '#181818'
+            },
+            alwaysForward: true, // When false the spring will reverse normally.
+            restAt: null, // A number from 0.1 to 0.9 || null for full rotation
+            renderBase: false
+        }
+        */
+        /*
+        rebound: {
+            tension: 1,
+            friction: 3
+        },
+        spinner: {
+            radius: 90,
+            sides: 5,
+            depth: 4,
+            colors: {
+                background: '#91A7D0',
+                stroke: null, //'#231E76',
+                base: null, //'#403F6F',
+                child: '#F6CAC9'
+            },
+            alwaysForward: true, // When false the spring will reverse normally.
+            restAt: 0.8, // A number from 0.1 to 0.9 || null for full rotation
+            renderBase: true
+        }
+        */
+        /*
+        rebound: {
+            tension: 2,
+            friction: 7
+        },
+        spinner: {
+            id: 'spinner',
+            radius: 200,
+            sides: 3,
+            depth: 9,
+            colors: {
+                background: '#f0f0f0',
+                stroke: null,
+                base: '#222',
+                child: '#f0f0f0'
+            },
+            alwaysForward: true, // When false the spring will reverse normally.
+            restAt: null, // A number from 0.1 to 0.9 || null for full rotation
+            renderBase: true
+        }
+        */
+    },
+    //fontIconExtend: "//at.alicdn.com/t/font_xxxxxxxxxx.css",//字体图标库扩展Css的Url
+    //进度条配置，显示在页面顶部
+    progressBar: {
+        color   : '#77b6ff',
+    },
+    //当页面失去焦点，页面title显示的文字 
+    title: {
+        onblur: '下次再见～',//「待填内容」
+        onblurTime: 500, //当页面失去焦点，页面title变化的延时时间，单位毫秒。该配置值为 -1 时，当页面失去焦点，页面title显示的文字不会变化
+        focus: '欢迎回来～',//「待填内容」
+        focusTime: 1000,
+    },
+    //页脚样式
+    footer: {
+        style: 1,
+        text: {
+            left: '',//页脚标语左侧文字 「待填内容」
+            right: '',//页脚标语右侧文字 「待填内容」
+            //页脚标语字体图标
+            iconFont: {
+                icon:  "icon-xl",// iconfont 图标名称
+                color: "red",// 图标颜色
+                fontSize: "16px",// 图标大小
+            }
+        },
+    },
+    //右下角菜单
+    rtMenu: {
+        //qrCode: 'https://x1.jpg',//二维码图片URL
+        //赞赏
+        /*
+        reward: {
+            alipay: 'https://x1.jpg',
+            wechatpay: 'https://x2.jpg'
+        },
+        */
+        downScrollDom: '#blog_post_info_block',//跳至底部位置定义，配置为 JQuery 选择器
+    },
+    //日/夜间模式配置。页面使用日/夜间模式优先级：用户设置 > 自动切换 > 默认。
+    switchDayNight: {
+        enable: true,
+        auto: {
+            enable: false
+        }
+    },
+    //动效「待填内容」
+  //根据个人喜好开启或关闭即可，但要注意，开启了固然比较好看，但极消耗性能，需慎重！！！
+    animate: {
+        //主页banner上name的动效（在个人首页将鼠标移到大标题「用户名」位置时标题会有彩色动效）【版本要求：2.1.3】
+        homeBannerTitle: {
+            enable: true,
+        },
+        //主页banner动效
+        homeBanner: {
+            enable: true,// 是否开启动效
+            options: {
+                radius: 15,
+                density: 0.2,
+                color: 'rgba(255,255,255, .2)', // 颜色设置，“random” 为随机颜色
+                clearOffset: 0.3
+            }
+        },
+        //文章页标题动效
+        articleTitle: {
+            enable: true,
+        },
+        //文章页banner动效
+        articleBanner: {
+            enable: true,
+        },
+        //背景动效
+        background: {
+            enable: false,
+            options: {
+                colorSaturation: "60%",
+                colorBrightness: "50%",
+                colorAlpha: 0.5,
+                colorCycleSpeed: 5,
+                verticalPosition: "random",
+                horizontalSpeed: 200,
+                ribbonCount: 3,
+                strokeSize: 0,
+                parallaxAmount: -0.2,
+                animateSections: true
+            }
+        },
+        //banner背景图自动切换动效
+        bannerImages: {
+            enable: true,
+            options: {
+                //itemNum: 5, // 图片拆分成几列
+                //current: -1, // 初始图片的下标，如果为负数则为随机
+                //sort: 1, // 1 代表每次向下加载一个图片，-1 代表每次向上加载一个图片
+                time: 15000 // 每次切换间隔时间，单位：毫秒
+            }
+        },
+        //背景动效，颜色比较浅不影响阅读，鼠标移动有简单动偏移动画
+        backgroundMouse: {
+            enable: true,
+        },
+        //跟随鼠标动效「这个挺好看的，但容易卡顿，所以之前关了，你也可以打开。」
+        mouse: {
+            enable: false,
+            options: {
+                size: 8, // 中心圆点的大小，单位 px
+                sizeF: 36 // 外部边框的大小，单位 px
+            }
+        },
+    },
+    code: {
+        type: 'hljs', // 所有可配置项 cnblogs: 使用博客园默认代码高亮样式  hljs: 使用 Highlighting 插件渲染代码高亮样式。
+        options: {
+            maxHeight: '70vh',//代码框高度限制  例如：70vh、70%
+            line: true,//是否渲染代码行号，如开启会在代码框左侧增加行号显示，默认不开启。 不与博客园行号渲染兼容，如果博客园添加代码时勾选显示行号并同时开启此配置，会出现双行号的现象。大家自己权衡使用此配置
+            macStyle: true,//mac风格代码框样式
+        },
+    },
+    //文章目录
+    articleDirectory: {
+        position: 'right',//用于设置文章目录显示在文章的左侧还是右侧，配置项：right、left
+        minBodyWeight: 1400,//文章目录在屏幕宽度到多少像素及以内时开始隐藏；例如：配置成 1000，当屏幕宽度 <= 1000 时，隐藏目录（可通过右下角按钮显示）
+        autoWidthScroll: true,//文章目录中标题过长时候是否显示横向滚动条
+    },
+    //文章后缀
+    articleSuffix: {
+      //「待填内容」
+        imgUrl: '',//文章后缀左侧图片，不配置使用用户头像配置 info.avatar，用户头像没配置使用主题默认头像。
+        aboutHtml: "",//关于博主，支持HTML代码，不配置使用默认
+        copyrightHtml: "除特殊说明外，转载请注明出处～[知识共享署名-相同方式共享 4.0 国际许可协议]",//版权声明
+        //supportHtml: "声援...",//声援博主，支持HTML代码，不配置使用默认。
+    },
+    //控制台输出
+    /*
+    consoleList: [
+        ['', ''],
+        ['', ''],
+    ],
+    */
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.1.4/dist/simpleMemory.js" defer></script>
+
+
+
+
+
+<!-- 鼠标特效 「待填内容」 文字可以替换成你想要的内容-->
+<script type="text/javascript">
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("用我三生烟火，换你一世迷离","长街长，烟花繁，你挑灯回看","短亭短，红尘辗，我把萧再叹","终是谁使弦断，花落肩头，恍惚迷离","多少红颜悴，多少相思碎，唯留血染墨香哭乱冢","苍茫大地一剑尽挽破，何处繁华笙歌落","斜倚云端千壶掩寂寞，纵使他人空笑我","任他凡事清浊，为你一笑间轮回甘堕","寄君一曲，不问曲终人聚散","谁将烟焚散，散了纵横的牵绊","听弦断，断那三千痴缠","坠花湮，湮没一朝风涟","花若怜，落在谁的指尖","灯火星星，人声杳杳，歌不尽乱世烽火","如花美眷，似水流年","回得了过去，回不了当初","似此星辰非昨夜，为谁风露立中宵","蝴蝶很美，终究蝴蝶飞不过沧海","山河拱手，为君一笑","待浮花浪蕊俱尽，伴君幽独");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+
+
+
+
+<!--鼠标点击爱心特效-->
+<script type="text/javascript">
+(function(window,document,undefined){
+        var hearts = [];
+        window.requestAnimationFrame = (function(){
+                return window.requestAnimationFrame || 
+                           window.webkitRequestAnimationFrame ||
+                           window.mozRequestAnimationFrame ||
+                           window.oRequestAnimationFrame ||
+                           window.msRequestAnimationFrame ||
+                           function (callback){
+                                   setTimeout(callback,1000/60);
+                           }
+        })();
+        init();
+        function init(){
+                css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+                attachEvent();
+                gameloop();
+        }
+        function gameloop(){
+                for(var i=0;i<hearts.length;i++){
+                    if(hearts[i].alpha <=0){
+                            document.body.removeChild(hearts[i].el);
+                            hearts.splice(i,1);
+                            continue;
+                    }
+                    hearts[i].y--;
+                    hearts[i].scale += 0.004;
+                    hearts[i].alpha -= 0.013;
+                    hearts[i].el.style.cssText = "left:"+hearts[i].x+"px;top:"+hearts[i].y+"px;opacity:"+hearts[i].alpha+";transform:scale("+hearts[i].scale+","+hearts[i].scale+") rotate(45deg);background:"+hearts[i].color;
+            }
+            requestAnimationFrame(gameloop);
+        }
+        function attachEvent(){
+                var old = typeof window.onclick==="function" && window.onclick;
+                window.onclick = function(event){
+                        old && old();
+                        createHeart(event);
+                }
+        }
+        function createHeart(event){
+            var d = document.createElement("div");
+            d.className = "heart";
+            hearts.push({
+                    el : d,
+                    x : event.clientX - 5,
+                    y : event.clientY - 5,
+                    scale : 1,
+                    alpha : 1,
+                    color : randomColor()
+            });
+            document.body.appendChild(d);
+    }
+    function css(css){
+            var style = document.createElement("style");
+                style.type="text/css";
+                try{
+                    style.appendChild(document.createTextNode(css));
+                }catch(ex){
+                    style.styleSheet.cssText = css;
+                }
+                document.getElementsByTagName('head')[0].appendChild(style);
+    }
+        function randomColor(){
+                return "rgb("+(~~(Math.random()*255))+","+(~~(Math.random()*255))+","+(~~(Math.random()*255))+")";
+        }
+})(window,document);
+</script>
+
+
+
+
+
+<!--鼠标烟花粒子特效-->
+<script src="https://blog-static.cnblogs.com/files/blogs/693306/cursor-effects.js"></script>
+<canvas width="1366" height="662" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
+
+
+
+
+
+<script src="https://blog-static.cnblogs.com/files/blogs/693306/mouse.min.js"></script>
+<script type="text/javascript">$.shuicheMouse({type:11,color:false})</script>
+
+
+
+
+
+<!--console 「待填内容」这一部分是你按F12进入控制台后显示的部分-->
+<script type="text/javascript">
+function CONSOLECLEAR(){console.clear();} setTimeout("CONSOLECLEAR()","2000");
+function CONSOLEOUTPUT()
+{
+    console.log("");//双引号里填入你想说的话即可。可以添加更多。
+}
+setTimeout("CONSOLEOUTPUT()","5000");
+</script>
+
+<!-- live2D -->
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/blogs/693306/waifu1.css"/>
+<script src="https://blog-static.cnblogs.com/files/blogs/693306/jquery.min.js"></script>
+<div class="waifu" id="waifu">
+<div class="waifu-tips" style="opacity: 1;"></div>
+<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+<div class="waifu-tool">
+<span class="fui-home"></span>
+<span class="fui-chat"></span>
+<span class="fui-eye"></span>
+<span class="fui-user"></span>
+<span class="fui-photo"></span>
+<span class="fui-info-circle"></span>
+<span class="fui-cross"></span>
+</div>
+</div>
+<script src="https://blog-static.cnblogs.com/files/blogs/693306/live2d.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/blogs/693306/waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/blogs/693306/flat-ui.min.css"/>

@@ -1,0 +1,1 @@
+{"name":"Local: subway","url":"/Users/sky/Document/VScode/SourceCode/subway.cpp","tests":[{"id":1785312686932,"input":"5 5\n1 1 1 1 1\n2 5 5\n2 1 2\n1 1 2 2\n2 1 1\n1 1 5 3","output":"5\n13\n9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/subway.cpp","group":"local","local":true}

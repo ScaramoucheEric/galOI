@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "cstring": "cpp",
+        "vector": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "ios": "cpp",
+        "deque": "cpp",
+        "bitset": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp",
+        "__bit_reference": "cpp",
+        "__split_buffer": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
+    },
+    "python.REPL.enableREPLSmartSend": false,
+    "markdown.validate.enabled": false
+}

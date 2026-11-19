@@ -1,0 +1,1 @@
+{"name":"Local: [ABC416E]","url":"/Users/sky/Document/VScode/SourceCode/[ABC416E].cpp","tests":[{"id":1784862770894,"input":"4 1\n1 2 10\n2 100\n1 3\n5\n3\n1 2 3 60\n3\n2 4\n3\n","output":"440\n280\n900\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/[ABC416E].cpp","group":"local","local":true}

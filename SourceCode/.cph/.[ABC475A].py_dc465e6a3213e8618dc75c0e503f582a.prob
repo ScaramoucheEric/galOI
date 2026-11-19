@@ -1,0 +1,1 @@
+{"name":"Local: [ABC475A]","url":"/Users/sky/Document/VScode/SourceCode/[ABC475A].py","tests":[{"id":1789215472405,"input":"mnclr\n","output":"monocolor"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/[ABC475A].py","group":"local","local":true}
