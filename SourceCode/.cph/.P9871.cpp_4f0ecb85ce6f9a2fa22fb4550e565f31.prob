@@ -1,1 +1,0 @@
-{"name":"Local: P9871","url":"/Users/sky/Document/VScode/SourceCode/P9871.cpp","tests":[{"id":1791639256844,"input":"3\nnnrnnr\nzzzaab\nmmlmmlo","output":"8\n9\n16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/P9871.cpp","group":"local","local":true}

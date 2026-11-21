@@ -1,1 +1,0 @@
-{"name":"Local: [ABC481C]","url":"/Users/sky/Document/VScode/SourceCode/[ABC481C].cpp","tests":[{"id":1792844227724,"input":"8\npumpkin\nhobak\npompoen\nhobak\npumpkin\nboga\nboga\nhobak\n","output":"1\n2\n3\n2\n1\n4\n4\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/[ABC481C].cpp","group":"local","local":true}

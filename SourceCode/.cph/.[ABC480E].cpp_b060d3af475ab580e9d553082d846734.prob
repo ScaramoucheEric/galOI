@@ -1,1 +1,0 @@
-{"name":"Local: [ABC480E]","url":"/Users/sky/Document/VScode/SourceCode/[ABC480E].cpp","tests":[{"id":1792243187508,"input":"120\n","output":"18"},{"id":1792243193559,"input":"1000000000000000000\n","output":"1051148114007\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/[ABC480E].cpp","group":"local","local":true}

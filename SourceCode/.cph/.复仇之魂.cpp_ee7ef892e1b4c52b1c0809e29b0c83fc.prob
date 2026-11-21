@@ -1,1 +1,0 @@
-{"name":"Local: 复仇之魂","url":"/Users/sky/Document/VScode/SourceCode/复仇之魂.cpp","tests":[{"id":1785373725217,"input":"5\n3 2 1 4 5","output":"3"},{"id":1785373731422,"input":"9\n3 2 1 6 5 4 9 8 7","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/复仇之魂.cpp","group":"local","local":true}

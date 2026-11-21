@@ -1,1 +1,0 @@
-{"name":"Local: P17521","url":"c:\\Users\\Administrator\\Desktop\\OI\\SourceCode\\P17521.cpp","tests":[{"id":1794906059261,"input":"2\n5\n1 2 3 4 5\n9\n9 -9 8 -2 4 -4 3 -5 3","output":"15\r\n47"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Administrator\\Desktop\\OI\\SourceCode\\P17521.cpp","group":"local","local":true}

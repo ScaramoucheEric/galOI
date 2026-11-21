@@ -1,1 +1,0 @@
-{"name":"Local: d","url":"/Users/sky/Document/VScode/SourceCode/d.cpp","tests":[{"id":1785773584323,"input":"1 7\n# #\nU $\n4 3\nt D\nD t\n2 5\n$ 2","output":"0\n1\n-1\n3\n3\n-1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/VScode/SourceCode/d.cpp","group":"local","local":true}
