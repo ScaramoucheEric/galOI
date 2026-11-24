@@ -1,0 +1,1 @@
+{"name":"Local: P16789","url":"/Users/sky/Document/galOI/SourceCode/P16789.cpp","tests":[{"id":1795523228784,"input":"4\n3 10 1\n1 5 1\n2 100 0\n1 100 0","output":"2 115"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sky/Document/galOI/SourceCode/P16789.cpp","group":"local","local":true}
